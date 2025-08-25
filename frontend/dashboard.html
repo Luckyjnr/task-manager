@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager - Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h2>Dashboard</h2>
+  <button id="logoutBtn">Logout</button>
+
+  <h3>Add Task</h3>
+  <form id="taskForm">
+    <input type="text" id="taskTitle" placeholder="Task Title" required />
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <h3>Your Tasks</h3>
+  <ul id="taskList"></ul>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
